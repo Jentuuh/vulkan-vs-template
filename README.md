@@ -17,4 +17,4 @@ All the necessary prerequisites are already provided in `vulkan-vs-template/Libr
 ## Building
 Open `vulkan-vs-template/Vulkan Animation Engine.sln`, this will open up the Visual Studio IDE. Then, in the top bar, go to Build > Build Solution.
 
-After building, make sure to copy the `vulkan-vs-template/Libraries/ktx/ktx.dll`dynamic library file into the directory where your executable is located (this should be `vulkan-vs-template/x*<32/64>*/Debug` or `vulkan-vs-template/x*<32/64>*/Release` by default). You should now be able to run the application.
+After building, make sure to copy the `vulkan-vs-template/Libraries/ktx/ktx.dll`dynamic library file into the directory where your executable is located (this should be `vulkan-vs-template/x64/Debug` or `vulkan-vs-template/x64/Release` by default). You should now be able to run the application.
