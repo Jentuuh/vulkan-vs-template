@@ -23,7 +23,7 @@ The template has already set up the following things:
 * [ktx](https://github.com/KhronosGroup/KTX-Software) for loading cubemap textures
 * [Dear ImGui](https://github.com/ocornut/imgui)
 
-All the necessary prerequisites are already provided in `vulkan-vs-template/Libraries`, I have just provided an overview here in case you would want to update versions. When updating versions, make sure to also place the updated version in `vulkan-vs-template/Libraries` and update the project's properties (included and linked directories) in Visual Studio in case any directory names or file names have changed compared to the previous version.
+All the necessary prerequisites are already provided in `vulkan-vs-template/Libraries` for ease of starting. I have provided the overview here in case anyone would want to update library versions. When updating versions, make sure to also place the updated version in `vulkan-vs-template/Libraries` and update the project's properties (included and linked directories) in Visual Studio in case any directory names or file names have changed compared to the previous version.
 
 ## Building
 Open `vulkan-vs-template/Vulkan Animation Engine.sln`, this will open up the Visual Studio IDE. Then, in the top bar, go to Build > Build Solution.
