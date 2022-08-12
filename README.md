@@ -1,7 +1,18 @@
 # vulkan-vs-template
+A starter template for Vulkan projects using Visual Studio on the Windows operating system. This template is based on [Brendan Galea's excellent tutorial series](https://github.com/blurrypiano/littleVulkanEngine) on Vulkan.
+
 ## Contents
-A starter template for Vulkan projects using Visual Studio on the Windows operating system. The template contains the following features:
-* 
+The template has already set up the following things:
+
+* Physical + logical device setup
+* Swapchain creation and management
+* Pipeline creation and management (properties are rather default)
+* Descriptor set creation and management
+* Buffer helper object to simplify buffer operations
+* Window creation and management
+* Loading of game objects (using tinyobjloader, only supports .obj files though)
+* Simple camera movement through keyboard commands (WASD, QE, arrows)
+* GUI Window setup and rendering
 
 ## Prerequisites (Windows)
 * [Vulkan SDK for Windows](https://vulkan.lunarg.com/sdk/home#windows)
