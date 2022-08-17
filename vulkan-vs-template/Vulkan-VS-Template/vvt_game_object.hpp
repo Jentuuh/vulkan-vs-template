@@ -7,7 +7,7 @@
 // std 
 #include <memory>
 
-namespace vae {
+namespace vvt {
 
  // TODO: Make `Component` a base type?
  // TODO: Find cleaner solution for chunk management! (each gameobject currently contains a chunk)

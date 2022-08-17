@@ -14,7 +14,7 @@
 #include <glm/glm.hpp>
 #include<glm/gtc/constants.hpp>
 
-namespace vae {
+namespace vvt {
 
 	SimpleRenderSystem::SimpleRenderSystem(VvtDevice &device, VkRenderPass sceneRenderPass,  VkRenderPass skyboxRenderPass, VkDescriptorSetLayout globalSetLayout) : vvtDevice{device}
 	{

@@ -16,17 +16,17 @@
 
 namespace std {
     template<>
-    struct hash<vae::VvtModel::Vertex> {
-        size_t operator()(vae::VvtModel::Vertex const& vertex) const 
+    struct hash<vvt::VvtModel::Vertex> {
+        size_t operator()(vvt::VvtModel::Vertex const& vertex) const 
         {
             size_t seed = 0;
-            vae::hashCombine(seed, vertex.position, vertex.color, vertex.normal, vertex.uv);
+            vvt::hashCombine(seed, vertex.position, vertex.color, vertex.normal, vertex.uv);
             return seed;
         }
     };
 }
 
-namespace vae {
+namespace vvt {
 
     VvtModel::VvtModel(VvtDevice& device, const VvtModel::Builder &builder) : vvtDevice{ device } {
         og_vertex_data = builder.vertices;

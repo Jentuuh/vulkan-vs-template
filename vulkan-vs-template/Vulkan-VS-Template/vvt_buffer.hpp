@@ -1,7 +1,7 @@
 #pragma once
 #include "vvt_device.hpp"
 
-namespace vae {
+namespace vvt {
 
     class VvtBuffer {
     public:
@@ -42,7 +42,7 @@ namespace vae {
     private:
         static VkDeviceSize getAlignment(VkDeviceSize instanceSize, VkDeviceSize minOffsetAlignment);
 
-        VvtDevice& vaeDevice;
+        VvtDevice& vvtDevice;
         void* mapped = nullptr;
         VkBuffer buffer = VK_NULL_HANDLE;
         VkDeviceMemory memory = VK_NULL_HANDLE;
@@ -55,4 +55,4 @@ namespace vae {
         VkMemoryPropertyFlags memoryPropertyFlags;
     };
 
-}  // namespace vae
+}  // namespace vvt

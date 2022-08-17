@@ -6,7 +6,7 @@
 
 int main()
 {
-	vae::VvtApp app{};
+	vvt::VvtApp app{};
 	try 
 	{
 		//vvt::ChunkComponent testchunk{ 16 };

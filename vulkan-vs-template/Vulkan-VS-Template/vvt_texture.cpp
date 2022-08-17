@@ -4,7 +4,7 @@
 #include <stb_image.h>
 #include <stdexcept>
 
-namespace vae {
+namespace vvt {
 
     VvtTexture::VvtTexture(VvtDevice& device, const char* imagePath, VvtTextureType textureType) : device{ device } 
     {

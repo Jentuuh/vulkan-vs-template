@@ -9,7 +9,7 @@
 #include <set>
 #include <stdexcept>
 
-namespace vae {
+namespace vvt {
 
 VvtSwapChain::VvtSwapChain(VvtDevice &deviceRef, VkExtent2D extent)
     : device{deviceRef}, windowExtent{extent} {

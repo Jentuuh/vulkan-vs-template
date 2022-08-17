@@ -4,7 +4,7 @@
 #include <cassert>
 #include <stdexcept>
 
-namespace vae {
+namespace vvt {
 
     // *************** Descriptor Set Layout Builder *********************
 

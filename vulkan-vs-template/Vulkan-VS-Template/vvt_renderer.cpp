@@ -5,7 +5,7 @@
 #include <stdexcept>
 #include <array>
 
-namespace vae {
+namespace vvt {
 
 	VvtRenderer::VvtRenderer(VvtWindow & window, VvtDevice & device) : vvtWindow{window}, vvtDevice{device}
 	{

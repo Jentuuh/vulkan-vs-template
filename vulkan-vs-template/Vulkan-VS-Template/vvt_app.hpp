@@ -15,7 +15,7 @@
 #include <vector>
 #include <fstream>
 
-namespace vae {
+namespace vvt {
 	class VvtApp
 	{
 	public:

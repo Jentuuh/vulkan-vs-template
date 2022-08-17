@@ -9,7 +9,7 @@
 #include <memory>
 #include <cassert>
 
-namespace vae {
+namespace vvt {
 	class VvtRenderer
 	{
 	public:

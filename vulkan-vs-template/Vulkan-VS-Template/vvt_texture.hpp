@@ -3,7 +3,7 @@
 #include <ktx.h>
 #include <ktxvulkan.h>
 
-namespace vae {
+namespace vvt {
 
 	enum VvtTextureType {
 		TEXTURE_TYPE_STANDARD_2D,

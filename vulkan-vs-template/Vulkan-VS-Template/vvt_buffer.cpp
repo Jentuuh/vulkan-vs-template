@@ -11,7 +11,7 @@
 #include <cassert>
 #include <cstring>
 
-namespace vae {
+namespace vvt {
 
     /**
      * Returns the minimum instance size required to be compatible with devices minOffsetAlignment
@@ -36,7 +36,7 @@ namespace vae {
         VkBufferUsageFlags usageFlags,
         VkMemoryPropertyFlags memoryPropertyFlags,
         VkDeviceSize minOffsetAlignment)
-        : vaeDevice{ device },
+        : vvtDevice{ device },
         instanceSize{ instanceSize },
         instanceCount{ instanceCount },
         usageFlags{ usageFlags },
@@ -48,8 +48,8 @@ namespace vae {
 
     VvtBuffer::~VvtBuffer() {
         unmap();
-        vkDestroyBuffer(vaeDevice.device(), buffer, nullptr);
-        vkFreeMemory(vaeDevice.device(), memory, nullptr);
+        vkDestroyBuffer(vvtDevice.device(), buffer, nullptr);
+        vkFreeMemory(vvtDevice.device(), memory, nullptr);
     }
 
     /**
@@ -63,7 +63,7 @@ namespace vae {
      */
     VkResult VvtBuffer::map(VkDeviceSize size, VkDeviceSize offset) {
         assert(buffer && memory && "Called map on buffer before create");
-        return vkMapMemory(vaeDevice.device(), memory, offset, size, 0, &mapped);
+        return vkMapMemory(vvtDevice.device(), memory, offset, size, 0, &mapped);
     }
 
     /**
@@ -73,7 +73,7 @@ namespace vae {
      */
     void VvtBuffer::unmap() {
         if (mapped) {
-            vkUnmapMemory(vaeDevice.device(), memory);
+            vkUnmapMemory(vvtDevice.device(), memory);
             mapped = nullptr;
         }
     }
@@ -117,7 +117,7 @@ namespace vae {
         mappedRange.memory = memory;
         mappedRange.offset = offset;
         mappedRange.size = size;
-        return vkFlushMappedMemoryRanges(vaeDevice.device(), 1, &mappedRange);
+        return vkFlushMappedMemoryRanges(vvtDevice.device(), 1, &mappedRange);
     }
 
     /**
@@ -137,7 +137,7 @@ namespace vae {
         mappedRange.memory = memory;
         mappedRange.offset = offset;
         mappedRange.size = size;
-        return vkInvalidateMappedMemoryRanges(vaeDevice.device(), 1, &mappedRange);
+        return vkInvalidateMappedMemoryRanges(vvtDevice.device(), 1, &mappedRange);
     }
 
     /**

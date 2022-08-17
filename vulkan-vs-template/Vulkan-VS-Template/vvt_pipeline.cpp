@@ -8,7 +8,7 @@
 #include <iostream>
 #include <cassert>
 
-namespace vae {
+namespace vvt {
 
 	VvtPipeline::VvtPipeline(VvtDevice& device, const std::string vertFilePath, const std::string fragFilePath, const PipelineConfigInfo& configInfo): vvtDevice{device} 
 	{

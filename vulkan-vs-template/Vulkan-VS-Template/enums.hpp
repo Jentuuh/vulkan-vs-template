@@ -1,4 +1,4 @@
 #pragma once
-namespace vae{
+namespace vvt{
 	enum MoveDirection { POSX, NEGX, POSY, NEGY, POSZ, NEGZ };
 }

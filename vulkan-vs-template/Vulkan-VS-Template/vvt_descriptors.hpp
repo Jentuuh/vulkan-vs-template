@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace vae {
+namespace vvt {
 
     class VvtDescriptorSetLayout {
     public:

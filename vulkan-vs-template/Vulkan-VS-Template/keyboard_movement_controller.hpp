@@ -3,7 +3,7 @@
 #include "vvt_game_object.hpp"
 #include "vvt_window.hpp"
 
-namespace vae {
+namespace vvt {
 	class KeyboardMovementController
 	{
 	public:

@@ -3,7 +3,7 @@
 // std
 #include <stdexcept>
 
-namespace vae {
+namespace vvt {
 	VvtWindow::VvtWindow(int w, int h, std::string name) : width{ w }, height{ h }, windowName{name}
 	{
 		initWindow();

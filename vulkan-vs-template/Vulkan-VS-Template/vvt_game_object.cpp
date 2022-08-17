@@ -1,7 +1,7 @@
 #include "vvt_game_object.hpp"
 #include <iostream>
 
-namespace vae {
+namespace vvt {
 
     /**
     Constructs and returns a TRS-matrix that corresponds to translation * rotation.y * rotation.x * rotation.z * scale.

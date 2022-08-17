@@ -21,7 +21,7 @@
 #include <imgui_impl_vulkan.h>
 #include <imgui_impl_glfw.h>
 
-namespace vae {
+namespace vvt {
 
 	struct GlobalUbo {
 		alignas(16) glm::mat4 projection{ 1.0f };

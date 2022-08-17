@@ -12,7 +12,7 @@
 #include <memory>
 #include <vector>
 
-namespace vae {
+namespace vvt {
 	class VvtModel
 	{
 	public:
